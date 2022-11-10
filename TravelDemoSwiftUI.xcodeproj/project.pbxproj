@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E82853B5291D83D600FF3A7F /* RestaurantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82853B4291D83D600FF3A7F /* RestaurantDetails.swift */; };
 		E85FE814291D800100BBDB4A /* TravelDemoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FE813291D800100BBDB4A /* TravelDemoSwiftUIApp.swift */; };
 		E85FE816291D800100BBDB4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FE815291D800100BBDB4A /* ContentView.swift */; };
 		E85FE818291D800200BBDB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85FE817291D800200BBDB4A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E82853B4291D83D600FF3A7F /* RestaurantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetails.swift; sourceTree = "<group>"; };
 		E85FE810291D800100BBDB4A /* TravelDemoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDemoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85FE813291D800100BBDB4A /* TravelDemoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDemoSwiftUIApp.swift; sourceTree = "<group>"; };
 		E85FE815291D800100BBDB4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E82853B3291D836D00FF3A7F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E82853B4291D83D600FF3A7F /* RestaurantDetails.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		E85FE807291D800100BBDB4A = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		E85FE812291D800100BBDB4A /* TravelDemoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E82853B3291D836D00FF3A7F /* ViewModels */,
 				E85FE826291D817700BBDB4A /* Application */,
 				E85FE824291D815600BBDB4A /* Discover */,
 				E85FE823291D814D00BBDB4A /* Restaurant */,
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85FE828291D81D400BBDB4A /* TitleModifier.swift in Sources */,
+				E82853B5291D83D600FF3A7F /* RestaurantDetails.swift in Sources */,
 				E85FE816291D800100BBDB4A /* ContentView.swift in Sources */,
 				E85FE82E291D826900BBDB4A /* Restaurant.swift in Sources */,
 				E85FE82C291D825F00BBDB4A /* Destination.swift in Sources */,

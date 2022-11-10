@@ -81,6 +81,7 @@
 		E82853B6291D840C00FF3A7F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E82853DF291D8BF700FF3A7F /* ViewModels */,
 				E82853CC291D890200FF3A7F /* Category */,
 				E82853C9291D88C800FF3A7F /* Discover */,
 				E82853B7291D841800FF3A7F /* Restaurant */,
@@ -91,7 +92,6 @@
 		E82853B7291D841800FF3A7F /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				E82853B8291D844600FF3A7F /* RestaurantDetailsViewModel.swift */,
 				E82853BA291D845500FF3A7F /* RestaurantDetailsView.swift */,
 				E82853C2291D87CE00FF3A7F /* RestaurantPhotosView.swift */,
 				E82853C7291D882F00FF3A7F /* RestaurantCarouselContainer.swift */,
@@ -118,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				E82853CA291D88E500FF3A7F /* DestinationHeaderContainer.swift */,
-				E82853D3291D8A3200FF3A7F /* DestinationDetailsViewModel.swift */,
 				E82853D7291D8A7600FF3A7F /* PopularRestaurantsView.swift */,
 				E82853D1291D8A0600FF3A7F /* DiscoverView.swift */,
 				E82853D9291D8A9800FF3A7F /* DiscoverCategoriesView.swift */,
@@ -131,10 +130,19 @@
 		E82853CC291D890200FF3A7F /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E82853CD291D891900FF3A7F /* CategoryViewModel.swift */,
 				E82853CF291D894E00FF3A7F /* CategoryView.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E82853DF291D8BF700FF3A7F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E82853B8291D844600FF3A7F /* RestaurantDetailsViewModel.swift */,
+				E82853D3291D8A3200FF3A7F /* DestinationDetailsViewModel.swift */,
+				E82853CD291D891900FF3A7F /* CategoryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E85FE807291D800100BBDB4A = {

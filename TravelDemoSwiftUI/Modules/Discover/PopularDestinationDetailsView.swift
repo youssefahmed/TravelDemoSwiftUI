@@ -11,7 +11,7 @@ import MapKit
 struct PopularDestinationDetailsView: View {
     
     let destination: Destination
-    @ObservedObject var vm: DestinationDetailsViewModel
+    @ObservedObject var viewModel: DestinationDetailsViewModel
     @State var region: MKCoordinateRegion
     @State var isShowingAttractions = true
     
@@ -20,7 +20,7 @@ struct PopularDestinationDetailsView: View {
         self.destination = destination
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
         
-        self.vm = .init(name: destination.name)
+        self.viewModel = .init(name: destination.name)
     }
     
     let imageUrlStrings = [
@@ -32,7 +32,7 @@ struct PopularDestinationDetailsView: View {
     var body: some View {
         ScrollView {
             
-            if let photos = vm.destinationDetails?.photos {
+            if let photos = viewModel.destinationDetails?.photos {
                 DestinationHeaderContainer(imageUrlStrings: photos)
                     .frame(height: 250)
             }
@@ -48,7 +48,7 @@ struct PopularDestinationDetailsView: View {
                     }
                 }.padding(.top, 2)
                 HStack {
-                    Text(vm.destinationDetails?.description ?? "")
+                    Text(viewModel.destinationDetails?.description ?? "")
                         .padding(.top, 4)
                         .font(.system(size: 14))
                     Spacer()

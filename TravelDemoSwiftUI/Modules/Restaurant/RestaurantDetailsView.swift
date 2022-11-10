@@ -10,7 +10,7 @@ import SDWebImageSwiftUI
 
 struct RestaurantDetailsView: View {
     
-    @ObservedObject var vm = RestaurantDetailsViewModel()
+    @ObservedObject var viewModel = RestaurantDetailsViewModel()
     
     let restaurant: Restaurant
     
@@ -69,7 +69,7 @@ struct RestaurantDetailsView: View {
                 .padding(.horizontal)
             
             
-            Text(vm.details?.description ?? "")
+            Text(viewModel.details?.description ?? "")
                 .padding(.top, 8)
                 .font(.system(size: 14, weight: .regular))
                 .padding(.horizontal)
@@ -83,13 +83,13 @@ struct RestaurantDetailsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
-                    ForEach(vm.details?.popularDishes ?? [], id: \.self) { dish in
+                    ForEach(viewModel.details?.popularDishes ?? [], id: \.self) { dish in
                         DishCell(dish: dish)
                     }
                 }.padding(.horizontal)
             }
             
-            if let reviews = vm.details?.reviews {
+            if let reviews = viewModel.details?.reviews {
                 ReviewsList(reviews: reviews)
             }
             

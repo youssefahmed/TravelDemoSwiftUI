@@ -11,6 +11,8 @@
 		E85FE816291D800100BBDB4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FE815291D800100BBDB4A /* ContentView.swift */; };
 		E85FE818291D800200BBDB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85FE817291D800200BBDB4A /* Assets.xcassets */; };
 		E85FE81B291D800200BBDB4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85FE81A291D800200BBDB4A /* Preview Assets.xcassets */; };
+		E85FE828291D81D400BBDB4A /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FE827291D81D400BBDB4A /* TitleModifier.swift */; };
+		E85FE82A291D81F300BBDB4A /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FE829291D81F300BBDB4A /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E85FE815291D800100BBDB4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E85FE817291D800200BBDB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E85FE81A291D800200BBDB4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E85FE827291D81D400BBDB4A /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		E85FE829291D81F300BBDB4A /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,13 @@
 		E85FE812291D800100BBDB4A /* TravelDemoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E85FE813291D800100BBDB4A /* TravelDemoSwiftUIApp.swift */,
+				E85FE826291D817700BBDB4A /* Application */,
+				E85FE824291D815600BBDB4A /* Discover */,
+				E85FE823291D814D00BBDB4A /* Restaurant */,
+				E85FE822291D814600BBDB4A /* Model */,
+				E85FE821291D813C00BBDB4A /* Utils */,
+				E85FE825291D815E00BBDB4A /* Resources */,
 				E85FE815291D800100BBDB4A /* ContentView.swift */,
-				E85FE817291D800200BBDB4A /* Assets.xcassets */,
 				E85FE819291D800200BBDB4A /* Preview Content */,
 			);
 			path = TravelDemoSwiftUI;
@@ -65,6 +73,52 @@
 				E85FE81A291D800200BBDB4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E85FE821291D813C00BBDB4A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E85FE827291D81D400BBDB4A /* TitleModifier.swift */,
+				E85FE829291D81F300BBDB4A /* ActivityIndicatorView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E85FE822291D814600BBDB4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E85FE823291D814D00BBDB4A /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		E85FE824291D815600BBDB4A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E85FE825291D815E00BBDB4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E85FE817291D800200BBDB4A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E85FE826291D817700BBDB4A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E85FE813291D800100BBDB4A /* TravelDemoSwiftUIApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85FE828291D81D400BBDB4A /* TitleModifier.swift in Sources */,
 				E85FE816291D800100BBDB4A /* ContentView.swift in Sources */,
 				E85FE814291D800100BBDB4A /* TravelDemoSwiftUIApp.swift in Sources */,
+				E85FE82A291D81F300BBDB4A /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
